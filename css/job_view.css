@@ -1,0 +1,256 @@
+header {
+    background-color: #2f2ea6;
+    margin-top: -1rem;
+    padding: 0.1rem 0;
+}
+.navbar-brand {
+    margin-left: 7rem;
+}
+.collapse  {
+    margin-left:16rem;
+}
+.bell {
+    position:absolute;
+    right: 180px;
+    top: 10px;
+}
+main {
+    display: grid;
+    grid-template-areas: 'tittle overview'
+    'desc overview';
+    grid-template-columns: 0.4fr 3fr;
+    grid-template-rows: 2.5fr 1fr;
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+.tittle {
+    grid-area: tittle;
+    display: flex;
+
+}
+.tittle img {
+    margin-right: 1rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+.keterangan {
+    display: flex;
+}
+.keterangan p {
+    display: flex;
+    margin-right: 2rem;
+    font-size: 12px;
+    color: rgb(61, 59, 59);
+}
+.keterangan p img {
+    margin-right: 0.3rem;
+}
+.keterangan2 {
+    display: flex;
+}
+.full{
+    background-color: #DDE8F8;
+    color: #2f2ea6;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+.urgent {
+    background-color: #FEF2D9;
+    color: #F9AB00;
+    padding: 0.2rem 1.2rem;
+    border-radius: 12px;
+}
+.desc {
+    grid-area: desc;
+    color: black;
+    margin-top: -27rem;
+    padding-right: 5rem;
+    
+}
+.desc p {
+    font-size: 16px;
+}
+.overview {
+    grid-area: overview;
+    margin-right: 12rem;
+    margin-top: 3rem;
+
+}
+.button {
+    background-color: #F9AB00;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 7rem;
+    margin-left: 2rem;
+    padding: 0.6rem 0;
+}
+.button1 h6 {
+    font-size: 14px;
+}
+.job_overview {
+    background-color: #F5F7FC;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+}
+.text3 p {
+    color: black;
+    margin-top: -0.5rem;
+    font-size: 13px;
+}
+
+.button1 .text3 p {
+    color: rgb(88, 83, 83);
+}
+.button1 {
+    display: flex;
+    margin-top: 1.4rem;
+}
+.button1 h6 {
+    color: black;
+}
+.job_skill {
+    background-color: #F5F7FC;
+    padding: 1.5rem 2.6rem;
+    padding-left: -4rem;
+}
+.button2 {
+    background-color: #DDE8F8;
+    margin-right: 8.5rem;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 8px;
+}
+.emp_profile {
+    display: flex;
+    background-color: #F5F7FC;
+    margin-top: 2rem;
+}
+.text2 h6 {
+    font-size: 16px;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+}
+.text2 a {
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* footer */
+.footer {
+    display: flex;
+    height: 3rem;
+    background-color: #2f2ea6;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+    margin-bottom: -6rem;
+    margin-top: 2rem;
+    color: white;
+}
+.sosmed ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.sosmed ul li {
+    padding: 0 1rem;
+}
+
+/* Responsive breakpoint */
+@media (max-width: 620px) {
+    header {
+        padding-top: 0.7rem;
+        padding-bottom: 1.3rem;
+        padding-left: -6rem;
+    }
+    .collapse {
+        margin-left:0;
+    }
+    .navbar-brand {
+        margin-left: -4rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    main {
+    grid-template-areas: 'tittle '
+    'desc'
+    ' overview';
+    grid-template-columns: 0.4fr 3fr 2fr;
+    grid-template-rows: 1fr;
+    margin: 0 0;
+    padding: 0 0.4rem;
+    margin-right: 1rem;
+    }
+    .tittle {
+        grid-area: tittle;
+        flex-direction: column;
+    }
+    .keterangan p {
+        margin:0.2rem
+    }
+    .desc {
+        grid-area: desc;
+        text-align: justify;
+        margin-top: 1rem;
+    }
+    .overview {
+        grid-area: overview;
+        margin-left: 1rem;
+    }
+    .overview h6 {
+        flex-direction: column;
+    }
+    .job_overview{
+        grid-area: job_overview;
+        padding: 0.4rem 0.5rem;
+    }
+    .job_skill {
+        grid-area: skill;
+        padding-left: -1rem;
+    }
+    .button2 {
+        padding: 0;
+        margin: 0;
+        margin-right: 4rem;
+    }
+    .emp_profile {
+        grid-area: employe;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        margin-top: 2rem;
+        height: 7rem;
+    }
+    .copyright {
+        margin-bottom: 0rem;
+        text-align: center;
+        margin-left: -0.4rem;
+        margin-top: 1.3rem;
+    }
+    .sosmed {
+        margin-left: -2.2rem;
+        margin-top: 0.3rem;
+    }
+    .login {
+        display: none;
+    }
+    .bell {
+        position:absolute;
+        top:15px;
+        right: 70px;
+    }
+    .tombol {
+        margin-left: 5rem;
+        margin-right: -3rem;
+    }
+}

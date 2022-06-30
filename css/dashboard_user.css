@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.burger:before, .burger span, .burger:after {
+background-color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color:#2F2EA6;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border-bottom: 0.5px solid #000;
+    padding-bottom: 2rem;
+    text-align: center;
+    color:white;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+header ul li {
+    margin-right: 15px;
+    text-align: center;
+}
+header ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.tittle {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.konten {
+    display: grid;
+    grid-template-areas: 'aside main'
+    'footer footer';
+    grid-template-columns: 1.5fr 2.5fr;
+    grid-template-rows: 6fr 1fr;
+    padding-top: 2rem;
+}
+.main {
+    grid-area: main;
+    background-color: white;
+    padding: 2rem 3rem;
+    margin-right:26%;
+    border-radius:10px;
+}
+.main h6,.main img{
+    margin-bottom:2rem;
+}
+.aside {
+    grid-area: aside;
+    margin: 0 10px;
+    margin-left: 32%;
+    border-radius:8px;
+    margin-right:3rem;
+    padding-left:-4rem;
+}
+.profil {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.data {
+    margin-left: 20px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    height: 3rem;
+    background-color: #2f2ea6;
+    justify-content: space-between;
+    border-top:1px solid white;
+    padding: 3rem 8rem;
+    margin-bottom: -10rem;
+    margin-top: 6rem;
+    color: white;
+}
+.sosmed ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.sosmed ul li {
+    padding: 0 1rem;
+}
+
+.navbar {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 20px;
+}
+.button1 {
+    display: flex;
+    width: 70%;
+    padding: 0.5rem 0;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+.button1:hover {
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #DDE8F8;
+    color: #1967D2;
+}
+/* Responsive breakpoint */
+@media (max-width: 620px) {
+    .main {
+        margin-right: 1rem;
+    }
+    .aside {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}

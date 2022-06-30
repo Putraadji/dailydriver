@@ -1,0 +1,125 @@
+body {
+    background-color: #2F2EA6 !important;
+}
+
+input {
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.075);
+    border: none !important;
+}
+
+.header {
+    background-color: transparent !important;
+    padding: 1.5rem 10rem;
+}
+
+.login_form {
+    padding: 2rem 12rem;
+    background-color: #2F2EA6;
+    background-image: url('../img/Circle BG.png');
+    background-size: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.authcircle {
+    left: calc(50% - 275px);
+    position: absolute;
+    width: 550px;
+    z-index: 0;
+}
+
+
+.form {
+    margin: 0 31%;
+    border: 1px solid black;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F5F7FC;
+    padding: 1.5rem 2rem;
+}
+
+.formlogin {
+    width: auto;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+form i {
+    margin-top: 13px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+form p {
+    display: flex;
+    margin-right: -20%;
+}
+
+.masuk {
+    color: #FFFFFF !important;
+    border: solid 2px transparent !important;
+
+}
+
+.masuk:hover {
+    background-color: transparent !important;
+    color: #F9AB00 !important;
+    border: solid 2px #F9AB00 !important;
+}
+
+.ingat_saya a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.ingat_saya a:hover {
+    border-bottom: 2px solid #F9AB00;
+}
+
+.daftar a {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.daftar {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+}
+
+.daftar a:hover {
+    border-bottom: 2px solid #F9AB00;
+}
+
+.captcha form {
+    display: flex;
+    margin-left: 10px;
+}
+
+@media (max-width: 690px) {
+    .header {
+        padding-top: 1rem;
+        padding: 1.5rem 5.5rem;
+    }
+
+    .form {
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+
+    .login_form {
+        background-size: 600px;
+        margin: 0;
+    }
+
+    .masuk a {
+        padding: 1rem 5.5rem;
+    }
+
+    .daftar a {
+        margin-top: -0.2rem;
+        margin-left: 2rem;
+    }
+}

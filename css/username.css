@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    background-color: #2F2EA6;
+    padding:1.5rem 10rem;
+    overflow-x: hidden;
+}
+.circle {
+    position: relative;
+    top:0;
+    left: 63%;
+    margin-top: -5rem;
+    overflow-x: hidden;
+}
+.daftar_form{
+    padding: 1rem 2rem;
+    background-color: #2F2EA6;
+    background-size: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.form {
+    margin: 0 31%;
+    border: 1px solid black;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F5F7FC;
+    padding: 1.5rem 2rem;
+    margin-bottom:3rem;
+    margin-top: -16rem;
+}
+.tombol1 {
+    background-color: #DDE8F8;
+    width: 70%; 
+    margin-right: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+.tombol2 {
+    background-color: #1967D2; 
+    width: 70%; 
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.opsi{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+}
+form i {
+    margin-top: 13px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+form p {
+    display: flex;
+    margin-right: -20%;
+}
+.ingat_saya a {
+    text-decoration: none;
+    list-style: none;
+}
+.ingat_saya a:hover {
+    border-bottom: 2px solid #F9AB00;
+}
+.daftar a {
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.daftar {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+}
+.daftar a:hover {
+    border-bottom: 2px solid #F9AB00;
+}
+.text {
+    display:flex;
+    margin-left:0.4rem;
+}
+
+@media (max-width: 690px) {
+    .header {
+        padding-top: 1rem;
+        padding:1.5rem 4.5rem;
+    }
+    .form {
+        margin:0 0;
+    }
+    .tombol1 {
+        padding: 0 15px;
+        margin-left: 1rem;
+        width: 70%;
+    }
+    .tombol2 {
+        margin-left: 0;
+        width: 70%;
+        margin-right: 2rem;
+    }
+}

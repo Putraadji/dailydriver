@@ -1,0 +1,380 @@
+header {
+    background-color: #2f2ea6;
+    margin-top: -1rem;
+    
+}
+.navbar-brand {
+    margin-left: 7rem;
+}
+.collapse  {
+    margin-left:19rem;
+}
+main {
+    display: grid;
+    grid-template-areas: 'tittle overview'
+    'desc overview'
+    'review overview';
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-rows: 0.4fr 1fr;
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+.tittle {
+    grid-area: tittle;
+    display: flex;
+    width: 600px;
+
+}
+.tittle img {
+    margin-right: 1rem;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-top: 1.5rem;
+}
+.keterangan {
+    display: flex;
+}
+.keterangan p {
+    display: flex;
+    margin-right: 2rem;
+    font-size: 12px;
+    color: rgb(61, 59, 59);
+}
+.keterangan p img {
+    margin-right: 0.3rem;
+}
+.keterangan2 {
+    display: flex;
+}
+.full{
+    background-color: #DDE8F8;
+    color: #2f2ea6;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+.urgent {
+    background-color: #FEF2D9;
+    color: #F9AB00;
+    padding: 0.2rem 1.2rem;
+    border-radius: 12px;
+}
+.desc {
+    grid-area: desc;
+    color: black;
+    margin-top: 1.5rem;
+    padding-right: 5rem;
+    
+}
+.desc p {
+    font-size: 16px;
+}
+.overview {
+    grid-area: overview;
+    margin-right: 12rem;
+    margin-top: 3rem;
+    width: 350px;
+
+}
+.button {
+    display:flex;
+    justify-content:space-between;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+}
+.button_1 {
+    background-color: #F9AB00;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 1rem;
+    padding: 0.6rem 3.5rem;
+}
+.button_2 {
+    background-color: #F9AB00;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 2rem;
+    padding: 0.6rem 1rem;
+}
+.button1 h6 {
+    font-size: 14px;
+}
+.job_overview {
+    background-color: #F5F7FC;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+}
+.text3 {
+    margin-left: 1rem;
+}
+.text3 p {
+    color: black;
+    margin-top: -0.5rem;
+    font-size: 13px;
+}
+
+.button1 .text3 p {
+    color: rgb(88, 83, 83);
+}
+.button1 {
+    display: flex;
+    margin-top: 1.4rem;
+}
+.button1 h6 {
+    color: black;
+}
+.job_skill {
+    background-color: #F5F7FC;
+    padding: 1.5rem 2.6rem;
+    padding-left: -4rem;
+}
+.button2 {
+    background-color: #DDE8F8;
+    margin-right: 8.5rem;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 8px;
+}
+.emp_profile {
+    display: flex;
+    background-color: #F5F7FC;
+    margin-top: 2rem;
+}
+.text2 h6 {
+    font-size: 16px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.text2  {
+    display:flex;
+}
+.comments {
+    margin-top: 3rem;
+}
+.name {
+    margin-left: 1.5rem;
+}
+.review1 {
+    display: flex;
+}
+.bell {
+    position:absolute;
+    right: 150px;
+    top: 10px;
+}
+
+.review {
+    grid-area: review;
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    color: black;
+    margin-right: 3rem;
+}
+.review h6 {
+    font-weight: bold;
+}
+.rating {
+    margin-left:10rem;
+    display:flex;
+}
+.checked {
+  color: orange;
+}
+.angka {
+    margin-right:2rem;
+    background-color:#F9AB00;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    margin-bottom:5rem;
+    color:white;
+    padding-left: 0.3rem;
+    padding-top: 0.25rem;
+    margin-right: 0.5rem;
+    margin-top: -0.3rem;
+}
+.rate {
+    display: flex;
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin-right: 7rem;
+}
+.rate h6 {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.button_3 {
+    background-color: #F9AB00;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 16rem;
+    padding: 0.6rem 1rem;
+}
+/* footer */
+.footer {
+    display: flex;
+    height: 3rem;
+    background-color: #2f2ea6;
+    justify-content: space-between;
+    padding: 3rem 8rem;
+    margin-bottom: -6rem;
+    margin-top: 2rem;
+    color: white;
+}
+.sosmed ul,.sosmed1 ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.sosmed ul li {
+    padding: 0 1rem;
+}
+.sosmed1 ul li {
+    padding: 0 0.6rem;
+}
+.sosmed1 {
+    margin-top: 0.7rem;
+}
+
+
+/* Responsive breakpoint */
+@media (max-width: 640px) {
+    header {
+        padding-top: 0.7rem;
+        padding-bottom: 1.3rem;
+        padding-left: -7rem;
+    }
+    .collapse {
+        margin-left:0;
+    }
+    .navbar-brand {
+        margin-left: -5rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    main {
+    grid-template-areas: 'tittle '
+    'desc'
+    ' overview'
+    'rate';
+    grid-template-columns: 0.4fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 0;
+    padding: 0 0.4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    }
+    .tittle {
+        grid-area: tittle;
+    }
+    .keterangan p {
+        margin:0.2rem
+    }
+    .desc {
+        grid-area: desc;
+        text-align: justify;
+        margin-top: 1rem;
+    }
+    .overview {
+        grid-area: overview;
+    }
+    .job_overview{
+        grid-area: job_overview;
+        padding: 0.4rem 0.5rem;
+    }
+    .job_skill {
+        grid-area: skill;
+        padding-left: -1rem;
+    }
+    .button2 {
+        padding: 0;
+        margin: 0;
+        margin-right: 6rem;
+    }
+    .emp_profile {
+        grid-area: employe;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        margin-top: 2rem;
+        height: 7rem;
+    }
+    .copyright {
+        margin-bottom: 0rem;
+        text-align: center;
+        margin-left: -0.4rem;
+        margin-top: 1.3rem;
+    }
+    .sosmed {
+        margin-left: -2.2rem;
+        margin-top: 0.3rem;
+    }
+    .review {
+        grid-area: rate;
+        border: white;
+        margin-left: -1.7rem;
+    }
+    .comment_1 {
+        width: 300px;
+    }
+    .login {
+        display:none;
+    }
+    .rating {
+        margin-left:2rem;
+        display:flex;
+    }
+    .bell {
+        position:absolute;
+        top:10px;
+        right: 85px;
+    }
+    .tombol {
+        margin-left: 4rem;
+    }
+}

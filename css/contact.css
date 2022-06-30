@@ -1,0 +1,181 @@
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #fcfcfc; }
+  
+  p {
+    color: #b3b3b3;
+    font-weight: 300; }
+  
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  
+  a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+    a, a:hover {
+      text-decoration: none !important; }
+  
+  h2 {
+    font-size: 20px; }
+  
+  body {
+    position: relative; }
+    body:before {
+      position: absolute;
+      content: "";
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: .3s all ease-in-out;
+      -o-transition: .3s all ease-in-out;
+      transition: .3s all ease-in-out; }
+    body.show-sidebar:before {
+      opacity: 1;
+      visibility: visible; }
+  
+  .site-section {
+    padding: 7rem 0; }
+  
+  aside, main {
+    height: 100vh;
+    min-height: 580px; }
+    header {
+      display:flex;
+      justify-content:space-between;
+      margin-top:-5.7rem;
+      margin-bottom: 3.5rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+    }
+  .notif {
+      display:flex;
+      margin-top: -0.5rem;
+    }
+  .bell {
+      margin-left:1rem;
+    }
+  .tittle {
+    background-color: white;
+    margin-left: -7.45rem;
+    margin-right: -7.45rem;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+  .main {
+      background-color: white;
+      padding: 2rem 5rem;
+      border-radius:10px;
+      margin:2rem 4.5rem;
+  }
+  .edit_img {
+    position: relative;
+    margin-left: 4.7rem;
+    margin-top: -3.5rem;
+    margin-bottom: 2rem;
+  }
+  .hidden {
+    margin-left: -18rem;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .fb,.twt,.ig,.linkedin {
+      display:flex;
+      margin-right:12rem;
+  }
+  
+  
+  footer {
+    grid-area: footer;
+    display: flex;
+    height: 3rem;
+    background-color: #2f2ea6;
+    justify-content: space-between;
+    border-top:1px solid white;
+    padding: 3rem 8rem;
+    margin-bottom: -10rem;
+    margin-top: 6rem;
+    color: white;
+    margin-left:-7.4rem;
+    margin-right: -7.4rem;
+  }
+  .sosmed ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  .sosmed ul li {
+    padding: 0 1rem;
+  }
+  .option {
+    width:300px;
+  }
+  .option1 {
+    width:810px;
+  }
+  /* Responsive breakpoint */
+  @media (max-width: 620px) {
+    aside .toggle {
+      padding-top: 30px;
+      padding-left:15px;
+    }
+    .main {
+       padding: 1rem 1rem;
+       margin-right:0;
+       margin-left:0;
+       margin-top:3rem;
+    }
+    header {
+      margin-left: 4rem;
+      margin-bottom: -3.5rem;
+    }
+    .notif {
+      margin: 0;
+    }
+    .profil_1 {
+      opacity: 0;
+    }
+    .bell {
+      position: absolute;
+      top: 20px;
+      left: 300px;
+    }
+    .form1 {
+      display:flex;
+      flex-direction:column;
+      padding: 0 1rem;
+    }
+    .profil {
+      margin-left: 1rem;
+    }
+    .option1 {
+      width:300px;
+      }
+    .tombol {
+      margin-left: 1rem;
+    }
+    .fb,.twt,.ig,.linkedin {
+      display:flex;
+      margin-right:1rem;
+  }
+  .social_media {
+      margin-left:1rem;
+  }
+  
+    footer {
+      flex-direction: column;
+    }
+    .copyright {
+      margin: 0.5rem auto;
+      margin-top: -1.8rem;
+    }
+    .sosmed {
+      margin-left: -2.4rem;
+    }
+  }

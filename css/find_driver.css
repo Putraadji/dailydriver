@@ -1,0 +1,311 @@
+.navbar-brand img{
+    padding-left:9rem;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F7FC;
+    padding: 0.5rem 0;
+    color: black;
+    flex-direction: column;
+}
+.find {
+    padding: 2rem 2rem;
+    background-color: #2F2EA6;
+    padding-left: 7rem;
+}
+.loginbutton {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: solid 1px #ffffff !important;
+    border-radius: 5px !important;
+    margin-right: 1rem !important;
+    margin-left: 0.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+
+}
+.navbar3{
+width: 35rem;
+}
+
+.title{
+    text-decoration: none;
+    color: black;
+}
+.title:hover{
+    color: #1967D2;
+}
+.card-group {
+    border: none;
+    margin-left: 9rem;
+}
+
+.card-title {
+    font-size: smaller;
+}
+
+.viewbtn {
+    background-color: #DDE8F8 !important;
+    color: #1967D2 !important;
+    font-size: smaller !important;
+    margin-bottom: 1rem !important;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.viewbtn:hover{
+    background-color: #1967D2 !important;
+    color: #ffffff !important;
+}
+
+.loginbutton:hover {
+    background-color: #ffffff !important;
+    color: #2f2ea6 !important;
+}
+
+.addjobbtn {
+    background-color: #ffffff !important;
+    color: #2f2ea6 !important;
+    border-radius: 5px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+
+.addjobbtn:hover {
+    color: #1967d2 !important;
+}
+
+input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+.form {
+    float: left;
+    margin-right: 4rem;
+    border: 1px solid black;
+    border-radius: 13px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    background-color: #F5F7FC;
+    padding: 1.5rem 1rem;
+    margin-left:6rem;
+}
+.daftar {
+    display: flex;
+    flex-direction: column;
+}
+.daftar h6 {
+    color: white;
+}
+.list1, .list2, .list3,
+ .list4, .list5, .list6{
+    display: flex;
+    margin: 1rem 0;
+    padding: 2rem 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    margin-right: 2rem;
+}
+.list1 img , .list2 img, .list3 img , 
+.list4 img, .list5 img,.list6 img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+    margin-left: -1.5rem;
+}
+.gambar {
+    display: flex;
+    margin-left: 1rem;
+}
+.note  {
+    display:flex;
+    margin-bottom:1rem;
+    margin-left:1.5rem;
+    margin-top:0.5rem;
+}
+.location {
+    display:flex;
+}
+.cost {
+    display:flex;
+    margin-left:4rem;
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+}
+.keterangan {
+    display: flex;   
+}
+.keterangan1 {
+    margin-right: 1rem;
+    margin: auto 0;
+    background-color: #DDE8F8;
+    color: #1967D2;
+    border: 0px solid black;
+    border-radius: 11px;
+    padding: 5px 10px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.keterangan2 {
+    margin: auto 0;
+    margin-left: 1rem;
+    background: #FEF2D9;
+    border: 0px solid black;
+    border-radius: 11px;
+    padding: 5px 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #F9AB00;
+}
+.btn1:hover {
+    background-color: #F9AB00;
+    border-radius: 100%;
+}
+.btn1 {
+    background-color: #2F2EA6;
+    color: white;
+    border: 0px ;
+    padding:5px 10px;
+}
+/* Footer */
+.footer {
+    display: flex;
+    height: 3rem;
+    background-color: #2f2ea6;
+    justify-content: space-between;
+    padding: 3rem 0;
+    margin-left: -6.2rem;
+    padding-left: -2rem;
+    margin-top: 6rem;
+    color: white;
+    border-top: 1px solid #fff;
+}
+.copyright {
+    margin-left: 6rem;
+}
+.sosmed ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 5rem;
+}
+.sosmed ul li {
+    padding: 0 1rem;
+}
+
+/* Responsive breakpoint */
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .navbar-brand img{
+        padding:0;
+    }
+    .find {
+        display: grid;
+        grid-template-areas: "form"
+        "list"
+        "footer";
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 4fr 0.5fr;
+    }
+    .form {
+        display: flex;
+        grid-area:form;
+        align-content: center;
+        margin-left:1rem;
+        margin-bottom: 4rem;
+    }
+    .daftar {
+        display: flex;
+        grid-area: list;
+        margin-left: -6rem;
+        flex-direction: column;
+    }
+    .footer {
+        display: flex;
+        grid-area: footer;
+        flex-direction: column;
+    }
+    .copyright  {
+        margin-top: -20px;
+    }
+    .sosmed {
+        margin-top: 30px;
+        margin-left: 4rem;
+    }
+    .list1, .list2, .list3,
+ .list4, .list5,.list6{
+    display: flex;
+    margin: 1rem 0;
+    padding: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    }
+    .gambar {
+        margin-left: 2.4rem;
+    }
+}
+@media (max-width: 800px) {
+    .find {
+        display: grid;
+        grid-template-areas: "form"
+        "list"
+        "footer";
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 4fr 0.5fr;
+        
+    }
+    .form {
+        display: grid;
+        grid-area:form;
+        justify-content: flex-start;
+        margin-bottom: 4rem;
+    }
+    .daftar {
+        display: flex;
+        grid-area: list;
+        margin-left: -6rem;
+        flex-direction: column;
+        margin-right: 1rem;
+    }
+    .footer {
+        display: flex;
+        grid-area: footer;
+        flex-direction: column;
+    }
+    .copyright  {
+        margin-top: -20px;
+        margin-left: 3.5rem;
+    }
+    .sosmed {
+        margin-top: 30px;
+        margin-left: 1rem;
+    }
+    .list1, .list2, .list3,
+ .list4, .list5,.list6{
+    display: flex;
+    margin: 1rem 0;
+    padding: 2rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    }
+    .gambar {
+        margin-left: 2.4rem;
+    }
+}
